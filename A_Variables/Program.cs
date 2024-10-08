@@ -125,3 +125,13 @@ byte i1 = 255;
 string str = "200";
 
 bool bl = true;
+
+// float,decimal,double
+double number = 3.1f; 
+float number2 = 3.1f; // değer derleyici tarafından double olarak yorumlandığı için f eki ile float yorumlanır
+decimal number3 = 3.1m; // ondalıklı değerler double olarak yorumlandığı için m eki ile decimal yorumlanır
+
+
+float k = 1.1f;
+double l = 1.1d;
+decimal m = 1.1m;
