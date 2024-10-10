@@ -53,9 +53,49 @@ Console.WriteLine(l);// l'nin değerini ekrana yazdır...
 
 // Convert Methods
 // COnvert Metotlarında  dönüşüm runtime'da (çalışma zamanında)   yapılır 
+// Veri değer aralığımda değilse uygulama hata verir...OverflowException fırlatır
+// Eğer convert dönüşüm işlemini yapamazsa hata fırlatır (dönüşüm değer aralığı veya format olabilir)
 int x = 258;
+x = 250; // x'e 250 değerini ata...
 byte y = Convert.ToByte(x);
 Console.WriteLine(x);
+
+byte z;
+z = Convert.ToByte("2"); // 2'yi byte dönüştür: daha z'ye ata....
+
+bool statu = Convert.ToBoolean("false"); //false
+bool status = Convert.ToBoolean(1); // true
+
+//bool statu1 = Convert.ToBoolean("Hamburger"); uygulama bu satırda hata verir...çünkü boolean formatta değildir...
+bool statu2 = Convert.ToBoolean(3); // true kabul etti...
+
+//byte zz = Convert.ToByte("iki"); // sayı formatında olmadığı için hata verir... 
+
+int sayi5 = Convert.ToInt32("10000");
+long sayi6 = Convert.ToInt64("10000");
+int sayi7 = Convert.ToByte("3"); // önce byte dönüştürür. sonra otomatik int'e dönüşütürülür...
+
+//Convert.ToInt16 => shor
+//Convert.ToInt32 => int
+//Convert.ToInt64 => long
+
+//Convert.ToSingle => float
+//Convert.ToBoolean => bool
+
+// CTS Common Type System
+
+// C# dilindeki int .Net Frameworkte (Cts) ortak tür sisteminde Int32 olarak tanımlıdır...
+// C# dilindeki short .Net Frameworkte (Cts) Int16 olarak tanımldır...
+// C#d dilindeki long .Net Framewotkte (Cts) Int64 olarak tanımldır
+int kl = 1;
+
+
+
+
+
+
+
+
 
 
 
